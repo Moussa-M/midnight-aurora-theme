@@ -1,0 +1,219 @@
+{
+  "name": "Matrix Dark",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#000000",
+    "editor.foreground": "#00ff41",
+    "activityBar.background": "#001100",
+    "activityBar.foreground": "#00ff41",
+    "activityBarBadge.background": "#00ff41",
+    "activityBarBadge.foreground": "#000000",
+    "sideBar.background": "#001100",
+    "sideBar.foreground": "#00ff41",
+    "sideBarTitle.foreground": "#65ff00",
+    "statusBar.background": "#000000",
+    "statusBar.foreground": "#00ff41",
+    "statusBar.noFolderBackground": "#000000",
+    "statusBarItem.hoverBackground": "#002200",
+    "titleBar.activeBackground": "#000000",
+    "titleBar.activeForeground": "#00ff41",
+    "titleBar.inactiveBackground": "#001100",
+    "titleBar.inactiveForeground": "#008f11",
+    "tab.activeBackground": "#000000",
+    "tab.activeForeground": "#00ff41",
+    "tab.inactiveBackground": "#001100",
+    "tab.inactiveForeground": "#008f11",
+    "tab.border": "#003300",
+    "editorGroupHeader.tabsBackground": "#001100",
+    "panel.background": "#000000",
+    "panel.border": "#003300",
+    "panelTitle.activeForeground": "#00ff41",
+    "panelTitle.inactiveForeground": "#008f11",
+    "terminal.background": "#000000",
+    "terminal.foreground": "#00ff41",
+    "terminalCursor.background": "#000000",
+    "terminalCursor.foreground": "#00ff41",
+    "scrollbar.shadow": "#000000",
+    "scrollbarSlider.background": "#002200",
+    "scrollbarSlider.hoverBackground": "#003300",
+    "scrollbarSlider.activeBackground": "#004400",
+    "selection.background": "#003300",
+    "editor.selectionBackground": "#003300",
+    "editor.selectionHighlightBackground": "#002200",
+    "editor.lineHighlightBackground": "#001100",
+    "editorCursor.foreground": "#00ff41",
+    "editorWhitespace.foreground": "#002200",
+    "editorIndentGuide.background": "#002200",
+    "editorLineNumber.foreground": "#008f11",
+    "editorLineNumber.activeForeground": "#00ff41",
+    "button.background": "#00ff41",
+    "button.foreground": "#000000",
+    "button.hoverBackground": "#65ff00",
+    "dropdown.background": "#001100",
+    "dropdown.foreground": "#00ff41",
+    "dropdown.border": "#003300",
+    "input.background": "#001100",
+    "input.foreground": "#00ff41",
+    "input.border": "#003300",
+    "inputOption.activeBorder": "#00ff41",
+    "list.activeSelectionBackground": "#003300",
+    "list.activeSelectionForeground": "#65ff00",
+    "list.hoverBackground": "#002200",
+    "list.inactiveSelectionBackground": "#002200",
+    "list.focusBackground": "#003300",
+    "badge.background": "#00ff41",
+    "badge.foreground": "#000000",
+    "progressBar.background": "#00ff41",
+    "editorWidget.background": "#001100",
+    "editorWidget.border": "#003300",
+    "editorSuggestWidget.background": "#001100",
+    "editorSuggestWidget.border": "#003300",
+    "editorSuggestWidget.foreground": "#00ff41",
+    "editorSuggestWidget.selectedBackground": "#003300",
+    "peekView.background": "#001100",
+    "peekViewEditor.background": "#000000",
+    "peekViewTitle.background": "#002200",
+    "peekViewResult.background": "#001100",
+    "notifications.background": "#001100",
+    "notifications.foreground": "#00ff41",
+    "notificationCenterHeader.background": "#002200",
+    "notificationToast.border": "#003300",
+    "extensionButton.prominentBackground": "#00ff41",
+    "extensionButton.prominentForeground": "#000000",
+    "extensionButton.prominentHoverBackground": "#65ff00"
+  },
+  "tokenColors": [
+    {
+      "scope": "comment",
+      "settings": {
+        "foreground": "#008f11",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "string",
+      "settings": {
+        "foreground": "#65ff00"
+      }
+    },
+    {
+      "scope": "keyword",
+      "settings": {
+        "foreground": "#00ff41",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "storage.type",
+      "settings": {
+        "foreground": "#00ff41",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "entity.name.function",
+      "settings": {
+        "foreground": "#65ff00",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "entity.name.class",
+      "settings": {
+        "foreground": "#65ff00",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "variable",
+      "settings": {
+        "foreground": "#00ff41"
+      }
+    },
+    {
+      "scope": "constant.numeric",
+      "settings": {
+        "foreground": "#65ff00"
+      }
+    },
+    {
+      "scope": "constant.language",
+      "settings": {
+        "foreground": "#65ff00",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "support.function",
+      "settings": {
+        "foreground": "#00ff41"
+      }
+    },
+    {
+      "scope": "support.class",
+      "settings": {
+        "foreground": "#65ff00"
+      }
+    },
+    {
+      "scope": "punctuation",
+      "settings": {
+        "foreground": "#008f11"
+      }
+    },
+    {
+      "scope": "meta.tag",
+      "settings": {
+        "foreground": "#00ff41"
+      }
+    },
+    {
+      "scope": "entity.name.tag",
+      "settings": {
+        "foreground": "#65ff00",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "entity.other.attribute-name",
+      "settings": {
+        "foreground": "#00ff41"
+      }
+    },
+    {
+      "scope": "markup.heading",
+      "settings": {
+        "foreground": "#65ff00",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "markup.bold",
+      "settings": {
+        "foreground": "#00ff41",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "markup.italic",
+      "settings": {
+        "foreground": "#65ff00",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "markup.underline",
+      "settings": {
+        "foreground": "#00ff41",
+        "fontStyle": "underline"
+      }
+    },
+    {
+      "scope": "invalid",
+      "settings": {
+        "foreground": "#ff0000",
+        "fontStyle": "bold"
+      }
+    }
+  ]
+}

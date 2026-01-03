@@ -1,0 +1,122 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "compile",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "problemMatcher": "$tsc",
+      "label": "npm: compile",
+      "detail": "tsc -p ./"
+    },
+    {
+      "type": "npm",
+      "script": "watch",
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "typescript",
+        "source": "ts",
+        "applyTo": "closedDocuments",
+        "fileLocation": [
+          "relative",
+          "${workspaceRoot}"
+        ],
+        "pattern": "$tsc-watch",
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "^\\s*(?:message TS6032:|\\[?\\d{1,2}:\\d{1,2}:\\d{1,2}(?: (?:AM|PM))?\\]?) File change detected\\. Starting incremental compilation\\.",
+          "endsPattern": "^\\s*(?:message TS6042:|\\[?\\d{1,2}:\\d{1,2}:\\d{1,2}(?: (?:AM|PM))?\\]?) (?:Compilation complete\\.|Found \\d+ errors?\\. Watching for file changes\\.)"
+        }
+      },
+      "label": "npm: watch",
+      "detail": "tsc -watch -p ./"
+    },
+    {
+      "type": "npm",
+      "script": "package",
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "dependsOn": "npm: compile",
+      "label": "npm: package",
+      "detail": "vsce package"
+    },
+    {
+      "type": "npm",
+      "script": "lint",
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "label": "npm: lint",
+      "detail": "eslint src --ext ts"
+    },
+    {
+      "label": "Clean Build",
+      "type": "shell",
+      "command": "rm",
+      "args": [
+        "-rf",
+        "out"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared"
+      },
+      "windows": {
+        "command": "rmdir",
+        "args": [
+          "/s",
+          "/q",
+          "out"
+        ]
+      }
+    },
+    {
+      "label": "Full Clean Build",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Clean Build",
+        "npm: compile"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    }
+  ]
+}
