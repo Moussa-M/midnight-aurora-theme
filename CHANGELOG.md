@@ -2,6 +2,6 @@
 
 All notable changes to the "Midnight Aurora Theme" extension will be documented in this file.
 
-## [0.1.2]
+## [0.1.3]
 
 - Initial release
