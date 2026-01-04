@@ -2,8 +2,9 @@
   "name": "midnight-aurora-theme",
   "displayName": "Midnight Aurora Theme",
   "description": "A stunning dark theme with vibrant accent colors",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "publisher": "apertacodex",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.85.0"
   },
